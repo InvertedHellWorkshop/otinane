@@ -5,7 +5,7 @@
 
 	<groupId>com.p4fun.otinane</groupId>
 	<artifactId>otinane</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.${currentVersion}-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>otinane</name>
@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<currentVersion>0</currentVersion>
 	</properties>
 
 	<dependencies>
