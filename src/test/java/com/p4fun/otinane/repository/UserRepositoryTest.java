@@ -28,6 +28,7 @@ public class UserRepositoryTest {
     public void testInsertUserSuccess() throws Exception{
         String username="test";
         String password="12345";
+
         User user=new User();
         user.setUsername(username);
         user.setPassword(password);
