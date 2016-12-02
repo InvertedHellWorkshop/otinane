@@ -4,34 +4,29 @@ package com.p4fun.otinane.service;
  * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
 
+import com.p4fun.otinane.model.Item;
 import com.p4fun.otinane.model.User;
+import com.p4fun.otinane.repository.ItemRepository;
 import com.p4fun.otinane.repository.RoleRepository;
 import com.p4fun.otinane.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class ItemServiceImpl implements ItemService {
     @Autowired
-    private UserRepository userRepository;
-    @Autowired
-    private RoleRepository roleRepository;
-
+    private ItemRepository itemRepository;
 
     @Override
-    public void save(User user) {
-
-        user.setPassword(user.getPassword());
-        user.setRoles(new HashSet<>(roleRepository.findAll()));
-        userRepository.save(user);
-
-
+    public List<Item> getAllItems() {
+        return itemRepository.GetAll();
     }
 
     @Override
-    public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
+    public Item findByName(String name) {
+        return itemRepository.findByName(name);
     }
 }

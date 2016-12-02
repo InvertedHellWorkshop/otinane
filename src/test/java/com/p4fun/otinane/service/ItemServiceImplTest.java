@@ -1,7 +1,9 @@
 package com.p4fun.otinane.service;
 
 import com.p4fun.otinane.OtinaneApplication;
+import com.p4fun.otinane.model.Item;
 import com.p4fun.otinane.model.User;
+import com.p4fun.otinane.repository.ItemRepository;
 import com.p4fun.otinane.repository.RoleRepository;
 import com.p4fun.otinane.repository.UserRepository;
 import org.junit.Test;
@@ -13,37 +15,35 @@ import org.mockito.internal.verification.VerificationModeFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.*;
+
 /**
  * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)
-public class UserServiceImplTest {
+public class ItemServiceImplTest {
 
     @InjectMocks
-    private UserServiceImpl userService;
+    private ItemServiceImpl itemService;
 
     @Mock
-    private UserRepository userRepository;
+    private ItemRepository itemRepository;
 
-    @Mock
-    private RoleRepository roleRepository;
 
 
     @Test
-    public void testAddUserSuccess() throws Exception{
-        String username="qwertyui";
-        String password="12345678";
+    public void testAddItemSuccess() throws Exception{
+        List<Item> items = new ArrayList<>();
 
-        User user = new User();
-        user.setUsername(username);
-        user.setPasswordConfirm(password);
-        user.setPassword(password);
+        items.addAll(itemService.getAllItems());
 
-        userService.save(user);
-
-        Mockito.verify(userRepository, VerificationModeFactory.times(1)).save(Mockito.any(User.class));
-        Mockito.reset(userRepository);
+        Mockito.verify(itemRepository, VerificationModeFactory.times(1)).GetAll();
+        Mockito.reset(itemRepository);
     }
 
 }
