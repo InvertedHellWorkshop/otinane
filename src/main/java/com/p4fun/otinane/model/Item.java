@@ -3,7 +3,7 @@ package com.p4fun.otinane.model;
 import javax.persistence.*;
 
 /**
- * Created by Hrystos on 26/11/2016.
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
 @Entity
 @Table(name = "item")

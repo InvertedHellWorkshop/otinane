@@ -21,7 +21,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * Created by Hrystos on 29/11/2016.
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)

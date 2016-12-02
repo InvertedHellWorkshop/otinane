@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by Hrystos on 29/11/2016.
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
