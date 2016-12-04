@@ -1,9 +1,9 @@
-package com.p4fun.otinane.webapp;
+//package com.p4fun.otinane.webapp;
 
 /**
  * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
-
+/*
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -79,4 +79,4 @@ public class LoginTest {
             acceptNextAlert = true;
         }
     }
-}
+}*/
