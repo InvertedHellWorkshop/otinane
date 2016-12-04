@@ -1,20 +1,18 @@
 package com.p4fun.otinane.repository;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.OtinaneApplication;
 import com.p4fun.otinane.model.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.orm.jpa.JpaSystemException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
-
-
-/**
- * Created by Hrystos on 19/11/2016.
- */
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)

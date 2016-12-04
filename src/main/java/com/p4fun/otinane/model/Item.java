@@ -1,10 +1,11 @@
 package com.p4fun.otinane.model;
 
-import javax.persistence.*;
-
 /**
  * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
  */
+
+import javax.persistence.*;
+
 @Entity
 @Table(name = "item")
 public class Item {

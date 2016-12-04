@@ -1,5 +1,9 @@
 package com.p4fun.otinane.repository;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.OtinaneApplication;
 import com.p4fun.otinane.model.Item;
 import org.junit.Assert;
@@ -10,9 +14,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
- */
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)
@@ -43,8 +44,8 @@ public class ItemRepositoryTest {
         Assert.assertEquals(lat, dbItem.getLatitude(),0.001);
         Assert.assertEquals(lon, dbItem.getLongitude(),0.001);
 
-        //Δημιουργεία συναρτησης για διαγραφή χρήστη
-        //userRepository.delete(username);
+        //Δημιουργία συναρτησης για διαγραφή αντικειμένου
+        //itemRepository.delete(name);
     }
 
 

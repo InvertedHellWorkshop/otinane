@@ -1,11 +1,12 @@
 package com.p4fun.otinane.service;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.OtinaneApplication;
 import com.p4fun.otinane.model.Item;
-import com.p4fun.otinane.model.User;
 import com.p4fun.otinane.repository.ItemRepository;
-import com.p4fun.otinane.repository.RoleRepository;
-import com.p4fun.otinane.repository.UserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -17,12 +18,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.Assert.*;
-
-/**
- * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
- */
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)

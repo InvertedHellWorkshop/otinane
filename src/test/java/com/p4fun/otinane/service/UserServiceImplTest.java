@@ -1,5 +1,9 @@
 package com.p4fun.otinane.service;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.OtinaneApplication;
 import com.p4fun.otinane.model.User;
 import com.p4fun.otinane.repository.RoleRepository;
@@ -13,9 +17,7 @@ import org.mockito.internal.verification.VerificationModeFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-/**
- * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
- */
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)
 public class UserServiceImplTest {
