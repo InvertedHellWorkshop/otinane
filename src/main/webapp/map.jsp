@@ -16,7 +16,7 @@
     <style>
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
-        #map {
+        #map-canvas {
             height: 100%;
         }
         /* Optional: Makes the sample page fill the window. */
@@ -28,45 +28,193 @@
     </style>
 </head>
 <body>
-<div id="map"></div>
+<div id="map-canvas"></div>
 <script>
     // Note: This example requires that you consent to location sharing when
     // prompted by your browser. If you see the error "The Geolocation service
     // failed.", it means you probably did not give permission for the browser to
     // locate you.
-
+    var x = document.getElementById("map-canvas");
     function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 17
-        });
-        var infoWindow = new google.maps.InfoWindow({map: map});
 
-        // Try HTML5 geolocation.
+
+
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
+            navigator.geolocation.getCurrentPosition(showPosition);
 
-                infoWindow.setPosition(pos);
-                infoWindow.setContent('Location found.');
-                map.setCenter(pos);
-            }, function() {
-                handleLocationError(true, infoWindow, map.getCenter());
-            });
-        } else {
-            // Browser doesn't support Geolocation
-            handleLocationError(false, infoWindow, map.getCenter());
         }
-    }
+        function showPosition(position) {
+            var latx = position.coords.latitude;
+            var lonx = position.coords.longitude;
+            var resultx = new google.maps.LatLng(latx, lonx);
 
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                'Error: The Geolocation service failed.' :
-                'Error: Your browser doesn\'t support geolocation.');
+
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                zoom: 17,
+                scrollwheel: true,
+                center: resultx,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+
+
+            });
+
+
+            var infowindow = new google.maps.InfoWindow();
+
+            var imageDiploma = {
+                url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/yellow-comment-bubbles-icons-people-things/067543-yellow-comment-bubbles-icon-people-things-diploma-sc2.png',
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(70, 70),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(70, 70)
+
+            };
+
+
+            var marker4 = new google.maps.Marker({
+
+                position: new google.maps.LatLng(41.075322, 23.554138),
+                map: map,
+                icon: imageDiploma
+
+            });
+
+
+
+
+            google.maps.event.addListener(marker4, 'click', (function (marker4) {
+                return function () {
+                    infowindow.setContent("Diploma");
+                    infowindow.open(map, marker4);
+                }
+            })(marker4))
+
+            var imageCoffee = {
+                url: 'https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/46-512.png',
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(55, 55),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(55, 55)
+
+            };
+
+
+            var marker3 = new google.maps.Marker({
+
+                position: new google.maps.LatLng(41.074687, 23.553934),
+                map: map,
+                icon: imageCoffee
+
+            });
+
+
+
+
+            google.maps.event.addListener(marker3, 'click', (function (marker3) {
+                return function () {
+                    infowindow.setContent("Coffee");
+                    infowindow.open(map, marker3);
+                }
+            })(marker3))
+
+
+
+            var imageChar = {
+                url: 'http://i747.photobucket.com/albums/xx112/Studio-119-Degrees/Logos%20and%20Icons/icon-dex-littleguy.png',
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(55, 55),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(55, 55)
+
+            };
+
+
+            var marker2 = new google.maps.Marker({
+
+                position: new google.maps.LatLng(latx , lonx),
+                map: map,
+                icon: imageChar
+
+            });
+
+
+
+
+            google.maps.event.addListener(marker2, 'click', (function (marker2) {
+                return function () {
+                    infowindow.setContent("You are HERE");
+                    infowindow.open(map, marker2);
+                }
+            })(marker2))
+
+
+            var imageFood = {
+                url: 'http://www.freeiconspng.com/uploads/map-navigation-pin-point-restaurant-icon--14.png',
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(55, 55),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(55, 55)
+
+            };
+
+
+
+
+            var marker = new google.maps.Marker({
+
+                position: new google.maps.LatLng(41.075723, 23.551064),
+                map: map,
+                icon: imageFood,
+
+            });
+
+
+
+            google.maps.event.addListener(marker, 'click', (function (marker) {
+                return function () {
+                    infowindow.setContent("Food");
+                    infowindow.open(map, marker);
+                }
+            })(marker))
+
+
+            var imageBooks = {
+                url: 'https://cdn1.iconfinder.com/data/icons/map-objects/154/map-object-library-book-read-place-512.png',
+                // This marker is 20 pixels wide by 32 pixels high.
+                size: new google.maps.Size(55, 55),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(55, 55)
+
+            };
+
+
+            var marker1 = new google.maps.Marker({
+
+                position: new google.maps.LatLng(41.076224, 23.554250),
+                map: map,
+                icon: imageBooks
+
+            });
+
+
+
+            google.maps.event.addListener(marker1, 'click', (function (marker1) {
+                return function () {
+                    infowindow.setContent("Books");
+                    infowindow.open(map, marker1);
+                }
+            })(marker1))
+            ;
+
+
+
+        }
     }
 </script>
 <script async defer

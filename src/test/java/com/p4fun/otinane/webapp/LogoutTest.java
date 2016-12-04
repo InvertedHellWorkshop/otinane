@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LoginTest {
+public class LogoutTest {
     @Test
     public void startByWebDriver() {
 
@@ -22,7 +22,8 @@ public class LoginTest {
         driver.findElement(By.name("password")).clear();
         driver.findElement(By.name("password")).sendKeys("12345678");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
-        driver.navigate().to("http://localhost:8080/");
-        driver.findElement(By.linkText("Click here")).click();
+        driver.navigate().to("http://localhost:8080");
+        driver.findElement(By.linkText("Logout")).click();
+
     }
 }
