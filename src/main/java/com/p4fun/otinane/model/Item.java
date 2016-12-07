@@ -13,6 +13,7 @@ public class Item {
     private String name;
     private double latitude;
     private double longitude;
+    private String description;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -47,4 +48,8 @@ public class Item {
     public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
+
+    public String getDescription() { return  description; }
+
+    public void setDescription(String description) { this.description = description; }
 }

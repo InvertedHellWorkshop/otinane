@@ -75,9 +75,14 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/item", method = RequestMethod.GET)
+    @RequestMapping(value = "/items", method = RequestMethod.GET)
     public ResponseEntity<List<Item>> getAllItems(){
         return ResponseEntity.ok(itemService.getAllItems());
+    }
+
+    @RequestMapping(value = "/item", method = RequestMethod.GET)
+    public  ResponseEntity<Item> getItem(@RequestParam("name")String name){
+        return ResponseEntity.ok(itemService.findByName(name));
     }
 
 

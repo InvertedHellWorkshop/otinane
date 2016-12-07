@@ -30,11 +30,13 @@ public class ItemRepositoryTest {
         String name="test";
         double lat= 12345;
         double lon= 67890;
+        String desc = "ridle";
 
         Item item=new Item();
         item.setName(name);
         item.setLatitude(lat);
         item.setLongitude(lon);
+        item.setDescription(desc);
         itemRepository.saveAndFlush(item);
 
         Item dbItem=itemRepository.findByName(name);
@@ -43,6 +45,7 @@ public class ItemRepositoryTest {
         Assert.assertEquals(name, dbItem.getName());
         Assert.assertEquals(lat, dbItem.getLatitude(),0.001);
         Assert.assertEquals(lon, dbItem.getLongitude(),0.001);
+        Assert.assertEquals(desc, dbItem.getDescription());
 
         //Δημιουργία συναρτησης για διαγραφή αντικειμένου
         //itemRepository.delete(name);
