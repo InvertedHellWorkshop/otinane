@@ -18,3 +18,4 @@ INSERT INTO inventory (user_id, item_id) VALUES (1,1);
 INSERT INTO inventory (user_id, item_id) VALUES (1,2);
 INSERT INTO inventory (user_id, item_id) VALUES (1,3);
 INSERT INTO inventory (user_id, item_id) VALUES (1,4);
+INSERT INTO inventory (user_id, item_id) VALUES (2,2);
