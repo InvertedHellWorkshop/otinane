@@ -26,6 +26,32 @@
 		<appVersion>0.0.${currentVersion}-SNAPSHOT</appVersion>
 	</properties>
 
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changelog-plugin</artifactId>
+				<version>2.3</version>
+				<reportSets>
+					<reportSet>
+						<id>dual-report</id>
+						<configuration>
+							<type>tag</type>
+							<tags>
+								<tag implementation="java.lang.String">release-build-${currentVersion-1}</tag>
+								<tag implementation="java.lang.String">release-build-${currentVersion}</tag>
+							</tags>
+						</configuration>
+						<reports>
+							<report>changelog</report>
+							<report>file-activity</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
