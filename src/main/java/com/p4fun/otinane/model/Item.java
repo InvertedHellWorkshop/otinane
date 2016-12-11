@@ -9,18 +9,19 @@ import javax.persistence.*;
 @Entity
 @Table(name = "item")
 public class Item {
-    private long id;
+    private int id;
     private String name;
     private double latitude;
     private double longitude;
+    private String description;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -46,5 +47,13 @@ public class Item {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription(){
+        return description;
     }
 }

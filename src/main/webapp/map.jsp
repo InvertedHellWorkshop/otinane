@@ -92,7 +92,7 @@
             })(marker4))
 
             var imageCoffee = {
-                url: 'https://cdn4.iconfinder.com/data/icons/maps-and-navigation-solid-icons-vol-1/72/46-512.png',
+                url: '/resources/icons/Coffee.png',
                 // This marker is 20 pixels wide by 32 pixels high.
                 size: new google.maps.Size(55, 55),
                 origin: new google.maps.Point(0, 0),
@@ -153,7 +153,7 @@
 
 
             var imageFood = {
-                url: 'http://www.freeiconspng.com/uploads/map-navigation-pin-point-restaurant-icon--14.png',
+                url: '/resources/icons/Food.png',
                 // This marker is 20 pixels wide by 32 pixels high.
                 size: new google.maps.Size(55, 55),
                 origin: new google.maps.Point(0, 0),
@@ -184,7 +184,7 @@
 
 
             var imageBooks = {
-                url: 'https://cdn1.iconfinder.com/data/icons/map-objects/154/map-object-library-book-read-place-512.png',
+                url: '/resources/icons/Books.png',
                 // This marker is 20 pixels wide by 32 pixels high.
                 size: new google.maps.Size(55, 55),
                 origin: new google.maps.Point(0, 0),
