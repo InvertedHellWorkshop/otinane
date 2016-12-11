@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "item")
 public class Item {
-    private Long id;
+    private int id;
     private String name;
     private double latitude;
     private double longitude;
@@ -17,11 +17,11 @@ public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

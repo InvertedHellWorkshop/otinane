@@ -12,33 +12,33 @@ public class Inventory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long pk;
+    private int pk;
 
-    private Long userId;
-    private Long itemId;
+    private int userId;
+    private int itemId;
 
 
-    public Long getId() {
+    public int getId() {
         return pk;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.pk = id;
     }
 
-    public Long getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public Long getItemId() {
+    public int getItemId() {
         return itemId;
     }
 
-    public void setItemId(Long itemId) {
+    public void setItemId(int itemId) {
         this.itemId = itemId;
     }
 

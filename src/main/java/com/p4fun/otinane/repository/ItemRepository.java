@@ -20,5 +20,5 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
     List<Item> GetAll();
 
     @Query(value = "Select * from item inner join inventory on item.id = inventory.item_id and inventory.user_id=?1", nativeQuery = true)
-    List<Item> GetInventoryByUserId(Long userId);
+    List<Item> GetInventoryByUserId(int userId);
 }
