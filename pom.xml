@@ -38,7 +38,7 @@
 						<configuration>
 							<type>tag</type>
 							<tags>
-								<tag implementation="java.lang.String">release-build-${currentVersion-1}</tag>
+								<tag implementation="java.lang.String">release-build-${currentVersion}-${1}</tag>
 								<tag implementation="java.lang.String">release-build-${currentVersion}</tag>
 							</tags>
 						</configuration>
