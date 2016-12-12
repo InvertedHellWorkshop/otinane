@@ -5,12 +5,12 @@
 
 	<groupId>com.p4fun.otinane</groupId>
 	<artifactId>otinane</artifactId>
-	<version>${project.version.major}.${project.version.minor}.${project.version.patch}.${project.build.number}</version>
+	<version><!--${project.version.major}.${project.version.minor}.${project.version.patch}.-->${project.build.number}</version>
 	<packaging>war</packaging>
 
-	<project.version.major>0</project.version.major>
+	<!--<project.version.major>0</project.version.major>
 	<project.version.minor>0</project.version.minor>
-	<project.version.patch>5</project.version.patch>
+	<project.version.patch>5</project.version.patch>-->
 
 	<name>otinane</name>
 	<description>Software Engineering Project</description>

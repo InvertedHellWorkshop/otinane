@@ -5,6 +5,39 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Added dynamic versioning**
+
+
+            [cf77e400ff897bd](https://github.com/InvertedHellWorkshop/otinane/commit/cf77e400ff897bd) Immortuon *2016-12-12 17:14:32*
+
+
+    ## release-build-60
+            ### No issue
+
+            **Updated CAHNGELOG.md**
+
+
+            [2a106e652a0f638](https://github.com/InvertedHellWorkshop/otinane/commit/2a106e652a0f638) Yannis Kiachidis *2016-12-12 16:56:28*
+
+            **Added CHANGELOG.md**
+
+
+            [d12279601a0a625](https://github.com/InvertedHellWorkshop/otinane/commit/d12279601a0a625) Yannis Kiachidis *2016-12-12 16:55:15*
+
+
+    ## release-build-59
+            ### No issue
+
+            **Added changelog.mustache in classpath**
+
+                * Created CHANGELOG.md
+
+            [ab6cf63114c4a8b](https://github.com/InvertedHellWorkshop/otinane/commit/ab6cf63114c4a8b) Immortuon *2016-12-12 16:48:54*
+
+
+    ## release-build-58
+            ### No issue
+
             **Added Mustache dependency in pom.xml file**
 
 
