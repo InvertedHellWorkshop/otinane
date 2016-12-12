@@ -5,8 +5,12 @@
 
 	<groupId>com.p4fun.otinane</groupId>
 	<artifactId>otinane</artifactId>
-	<version>0.0.${currentVersion}-SNAPSHOT</version>
+	<version>${project.version.major}.${project.version.minor}.${project.version.patch}.${project.build.number}</version>
 	<packaging>war</packaging>
+
+	<project.version.major>0</project.version.major>
+	<project.version.minor>0</project.version.minor>
+	<project.version.patch>5</project.version.patch>
 
 	<name>otinane</name>
 	<description>Software Engineering Project</description>
@@ -22,9 +26,34 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<currentVersion>0</currentVersion>
-		<appVersion>0.0.${currentVersion}-SNAPSHOT</appVersion>
+		<!--<currentVersion>0</currentVersion>
+		<appVersion>0.0.${currentVersion}-SNAPSHOT</appVersion>-->
 	</properties>
+
+	<profiles>
+		<profile>
+			<id>StaticBuildNumber</id>
+			<activation>
+				<property>
+					<name>!env.BUILD_NUMBER</name>
+				</property>
+			</activation>
+			<properties>
+				<project.build.number>0</project.build.number>
+			</properties>
+		</profile>
+		<profile>
+			<id>DynamicBuildNumber</id>
+			<activation>
+				<property>
+					<name>env.BUILD_NUMBER</name>
+				</property>
+			</activation>
+			<properties>
+				<project.build.number>${env.BUILD_NUMBER}</project.build.number>
+			</properties>
+		</profile>
+	</profiles>
 
 	<!--<reporting>
 		<plugins>
