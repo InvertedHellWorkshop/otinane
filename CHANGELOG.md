@@ -5,6 +5,17 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Added InventoryTest java class**
+
+                * Updated pom.xml for test coverage auto-generation
+
+            [fbb57e803794238](https://github.com/InvertedHellWorkshop/otinane/commit/fbb57e803794238) Immortuon *2016-12-15 19:14:28*
+
+            **Configured dynamic versioning**
+
+
+            [5713caef8f31c98](https://github.com/InvertedHellWorkshop/otinane/commit/5713caef8f31c98) Immortuon *2016-12-12 17:29:54*
+
             **Added dynamic versioning**
 
 
