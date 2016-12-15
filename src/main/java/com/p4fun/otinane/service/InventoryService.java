@@ -1,6 +1,5 @@
 package com.p4fun.otinane.service;
 
-import com.p4fun.otinane.model.Inventory;
 import com.p4fun.otinane.model.Item;
 
 import java.util.List;
