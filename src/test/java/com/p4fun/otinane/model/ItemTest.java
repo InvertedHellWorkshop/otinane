@@ -1,13 +1,13 @@
 package com.p4fun.otinane.model;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-
-/**
- * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
- */
 
 public class ItemTest {
     @Test

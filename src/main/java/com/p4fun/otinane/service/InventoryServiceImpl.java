@@ -1,5 +1,9 @@
 package com.p4fun.otinane.service;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.model.Inventory;
 import com.p4fun.otinane.model.Item;
 import com.p4fun.otinane.model.User;
@@ -10,10 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-/**
- * Created by Hrystos on 8/12/2016.
- */
 
 @Service
 public class InventoryServiceImpl implements InventoryService {
