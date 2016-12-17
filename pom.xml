@@ -198,6 +198,11 @@
 						<configuration>
 							<!-- A file on filesystem //-->
 							<filePath>CHANGELOG.md</filePath>
+
+							<mediaWikiUsername>Immortuon</mediaWikiUsername>
+							<mediaWikiPassword>25i08/1991</mediaWikiPassword>
+							<mediaWikiUrl>https://www.mediawiki.org/wiki/User:Immortuon/otinane</mediaWikiUrl>
+							<mediaWikiTitle>Otinane</mediaWikiTitle>
 						</configuration>
 					</execution>
 				</executions>
