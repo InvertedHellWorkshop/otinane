@@ -14,6 +14,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)
@@ -49,6 +52,12 @@ public class ItemRepositoryTest {
 
         //Δημιουργία συναρτησης για διαγραφή αντικειμένου
         //itemRepository.delete(name);
+    }
+    
+    @Test
+    public  void testGetAllItems() throws Exception{
+        List<Item> itemsCollection = new ArrayList();
+        
     }
 
 
