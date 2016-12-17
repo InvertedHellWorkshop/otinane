@@ -5,6 +5,46 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Added Mediawiki support on project's auto-generated changelog**
+
+
+            [2ac12b3c8d75e3a](https://github.com/InvertedHellWorkshop/otinane/commit/2ac12b3c8d75e3a) Immortuon *2016-12-17 14:29:28*
+
+            **Aesthetic changes for uniformity**
+
+
+            [0014ecc23aa7fb3](https://github.com/InvertedHellWorkshop/otinane/commit/0014ecc23aa7fb3) Immortuon *2016-12-16 17:22:47*
+
+            **Experimenting with travis.yml file**
+
+
+            [a4020b30d21df35](https://github.com/InvertedHellWorkshop/otinane/commit/a4020b30d21df35) Immortuon *2016-12-15 20:36:45*
+
+            **Experimenting with travis.yml file**
+
+
+            [64edd90c9647d55](https://github.com/InvertedHellWorkshop/otinane/commit/64edd90c9647d55) Immortuon *2016-12-15 20:35:04*
+
+            **Experimenting with travis.yml file**
+
+
+            [92cfb32de20f1b7](https://github.com/InvertedHellWorkshop/otinane/commit/92cfb32de20f1b7) Immortuon *2016-12-15 20:30:53*
+
+            **Experimenting with travis.yml file**
+
+
+            [4f287d7dcd5f8a4](https://github.com/InvertedHellWorkshop/otinane/commit/4f287d7dcd5f8a4) Immortuon *2016-12-15 20:26:58*
+
+            **Experimenting with travis.yml file**
+
+
+            [bb6312c2f0cc55b](https://github.com/InvertedHellWorkshop/otinane/commit/bb6312c2f0cc55b) Immortuon *2016-12-15 20:24:25*
+
+            **Added travis.yml file**
+
+
+            [d792348cbaa10fb](https://github.com/InvertedHellWorkshop/otinane/commit/d792348cbaa10fb) Immortuon *2016-12-15 20:14:08*
+
             **Added InventoryTest java class**
 
                 * Updated pom.xml for test coverage auto-generation
