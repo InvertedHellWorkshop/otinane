@@ -3,7 +3,95 @@ This is a Pokemon Go! like game. Not so shiny but still fun :). This is a projec
 
 Changelog of Git Changelog.
 
+    # Git Changelog changelog
+
+Changelog of Git Changelog.
+
     ## Unreleased
+            ### No issue
+
+            **Added Mediawiki support on project's auto-generated changelog**
+
+
+            [2ac12b3c8d75e3a](https://github.com/InvertedHellWorkshop/otinane/commit/2ac12b3c8d75e3a) Immortuon *2016-12-17 14:29:28*
+
+            **Aesthetic changes for uniformity**
+
+
+            [0014ecc23aa7fb3](https://github.com/InvertedHellWorkshop/otinane/commit/0014ecc23aa7fb3) Immortuon *2016-12-16 17:22:47*
+
+            **Experimenting with travis.yml file**
+
+
+            [a4020b30d21df35](https://github.com/InvertedHellWorkshop/otinane/commit/a4020b30d21df35) Immortuon *2016-12-15 20:36:45*
+
+            **Experimenting with travis.yml file**
+
+
+            [64edd90c9647d55](https://github.com/InvertedHellWorkshop/otinane/commit/64edd90c9647d55) Immortuon *2016-12-15 20:35:04*
+
+            **Experimenting with travis.yml file**
+
+
+            [92cfb32de20f1b7](https://github.com/InvertedHellWorkshop/otinane/commit/92cfb32de20f1b7) Immortuon *2016-12-15 20:30:53*
+
+            **Experimenting with travis.yml file**
+
+
+            [4f287d7dcd5f8a4](https://github.com/InvertedHellWorkshop/otinane/commit/4f287d7dcd5f8a4) Immortuon *2016-12-15 20:26:58*
+
+            **Experimenting with travis.yml file**
+
+
+            [bb6312c2f0cc55b](https://github.com/InvertedHellWorkshop/otinane/commit/bb6312c2f0cc55b) Immortuon *2016-12-15 20:24:25*
+
+            **Added travis.yml file**
+
+
+            [d792348cbaa10fb](https://github.com/InvertedHellWorkshop/otinane/commit/d792348cbaa10fb) Immortuon *2016-12-15 20:14:08*
+
+            **Added InventoryTest java class**
+
+                * Updated pom.xml for test coverage auto-generation
+
+            [fbb57e803794238](https://github.com/InvertedHellWorkshop/otinane/commit/fbb57e803794238) Immortuon *2016-12-15 19:14:28*
+
+            **Configured dynamic versioning**
+
+
+            [5713caef8f31c98](https://github.com/InvertedHellWorkshop/otinane/commit/5713caef8f31c98) Immortuon *2016-12-12 17:29:54*
+
+            **Added dynamic versioning**
+
+
+            [cf77e400ff897bd](https://github.com/InvertedHellWorkshop/otinane/commit/cf77e400ff897bd) Immortuon *2016-12-12 17:14:32*
+
+
+    ## release-build-60
+            ### No issue
+
+            **Updated CAHNGELOG.md**
+
+
+            [2a106e652a0f638](https://github.com/InvertedHellWorkshop/otinane/commit/2a106e652a0f638) Yannis Kiachidis *2016-12-12 16:56:28*
+
+            **Added CHANGELOG.md**
+
+
+            [d12279601a0a625](https://github.com/InvertedHellWorkshop/otinane/commit/d12279601a0a625) Yannis Kiachidis *2016-12-12 16:55:15*
+
+
+    ## release-build-59
+            ### No issue
+
+            **Added changelog.mustache in classpath**
+
+                * Created CHANGELOG.md
+
+            [ab6cf63114c4a8b](https://github.com/InvertedHellWorkshop/otinane/commit/ab6cf63114c4a8b) Immortuon *2016-12-12 16:48:54*
+
+
+    ## release-build-58
             ### No issue
 
             **Added Mustache dependency in pom.xml file**
@@ -238,4 +326,5 @@ Changelog of Git Changelog.
                 * created base project
 
             [e802fd781a88d2a](https://github.com/InvertedHellWorkshop/otinane/commit/e802fd781a88d2a) ImmortuonPC\Immortuon *2016-11-12 16:31:14*
+
 
