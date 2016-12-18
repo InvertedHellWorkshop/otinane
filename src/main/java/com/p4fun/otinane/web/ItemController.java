@@ -1,5 +1,9 @@
 package com.p4fun.otinane.web;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.model.Item;
 import com.p4fun.otinane.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
-
-/**
- * Created by Hrystos on 17/12/2016.
- */
 
 @Controller
 public class ItemController {

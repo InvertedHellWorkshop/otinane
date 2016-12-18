@@ -1,5 +1,9 @@
 package com.p4fun.otinane.web;
 
+/**
+ * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
+ */
+
 import com.p4fun.otinane.OtinaneApplication;
 import com.p4fun.otinane.model.Item;
 import com.p4fun.otinane.repository.ItemRepository;
@@ -18,23 +22,14 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/**
- * Created by Hrystos on 17/12/2016.
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = OtinaneApplication.class)
 public class ItemControllerTest {
