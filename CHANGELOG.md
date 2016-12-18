@@ -5,6 +5,61 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Minor corrections that resolved an error**
+
+
+            [d92dce085b8f0d3](https://github.com/InvertedHellWorkshop/otinane/commit/d92dce085b8f0d3) Immortuon *2016-12-18 12:33:08*
+
+            **Optimization and uniformity changes**
+
+
+            [ead1bfb8bb8091e](https://github.com/InvertedHellWorkshop/otinane/commit/ead1bfb8bb8091e) Immortuon *2016-12-18 12:25:23*
+
+            **More tests**
+
+
+            [a0e25abf277b914](https://github.com/InvertedHellWorkshop/otinane/commit/a0e25abf277b914) Hrystos *2016-12-17 19:29:41*
+
+
+    ## release-build-79
+            ### No issue
+
+            **Update README.md**
+
+
+            [fa7567384e90dc3](https://github.com/InvertedHellWorkshop/otinane/commit/fa7567384e90dc3) Yannis Kiachidis *2016-12-17 18:03:25*
+
+
+    ## release-build-78
+            ### No issue
+
+            **Added JaCoCo test coverage support**
+
+
+            [ef8e44a5fbe8481](https://github.com/InvertedHellWorkshop/otinane/commit/ef8e44a5fbe8481) Immortuon *2016-12-17 15:45:05*
+
+
+    ## release-build-77
+            ### No issue
+
+            **Experimenting with Mediawiki support on project's auto-generated changelog**
+
+
+            [7a1519ed313a0b4](https://github.com/InvertedHellWorkshop/otinane/commit/7a1519ed313a0b4) Immortuon *2016-12-17 14:39:52*
+
+
+    ## release-build-76
+            ### No issue
+
+            **Added Mediawiki support on project's auto-generated changelog**
+
+
+            [f7122fdf6ffa8f2](https://github.com/InvertedHellWorkshop/otinane/commit/f7122fdf6ffa8f2) Immortuon *2016-12-17 14:37:07*
+
+
+    ## release-build-75
+            ### No issue
+
             **Added Mediawiki support on project's auto-generated changelog**
 
 
@@ -15,25 +70,45 @@ Changelog of Git Changelog.
 
             [0014ecc23aa7fb3](https://github.com/InvertedHellWorkshop/otinane/commit/0014ecc23aa7fb3) Immortuon *2016-12-16 17:22:47*
 
+
+    ## release-build-73
+            ### No issue
+
             **Experimenting with travis.yml file**
 
 
             [a4020b30d21df35](https://github.com/InvertedHellWorkshop/otinane/commit/a4020b30d21df35) Immortuon *2016-12-15 20:36:45*
+
+
+    ## release-build-72
+            ### No issue
 
             **Experimenting with travis.yml file**
 
 
             [64edd90c9647d55](https://github.com/InvertedHellWorkshop/otinane/commit/64edd90c9647d55) Immortuon *2016-12-15 20:35:04*
 
+
+    ## release-build-71
+            ### No issue
+
             **Experimenting with travis.yml file**
 
 
             [92cfb32de20f1b7](https://github.com/InvertedHellWorkshop/otinane/commit/92cfb32de20f1b7) Immortuon *2016-12-15 20:30:53*
 
+
+    ## release-build-70
+            ### No issue
+
             **Experimenting with travis.yml file**
 
 
             [4f287d7dcd5f8a4](https://github.com/InvertedHellWorkshop/otinane/commit/4f287d7dcd5f8a4) Immortuon *2016-12-15 20:26:58*
+
+
+    ## release-build-69
+            ### No issue
 
             **Experimenting with travis.yml file**
 
@@ -50,6 +125,10 @@ Changelog of Git Changelog.
                 * Updated pom.xml for test coverage auto-generation
 
             [fbb57e803794238](https://github.com/InvertedHellWorkshop/otinane/commit/fbb57e803794238) Immortuon *2016-12-15 19:14:28*
+
+
+    ## release-build-63
+            ### No issue
 
             **Configured dynamic versioning**
 
