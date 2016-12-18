@@ -136,7 +136,7 @@
                     }*/
                     //contentString[i] =items[i].grifos+'<form method="POST" class="form-wrapper cf"><input type="text"  id="field1" value=""  placeholder="Write your Answer" required><button type="button" onclick="myFunction()">OK</button> </form>';
                     var image = {
-                            url: '/resources/images/'+items[i].name+'.png',
+                            url: '/resources/icons/'+items[i].name+'.png',
                             size: new google.maps.Size(55, 55),
                             origin: new google.maps.Point(0, 0),
                             anchor: new google.maps.Point(17, 34),
@@ -183,7 +183,7 @@
             }
 
             var imageChar = {
-                    url: '/resources/images/Char.png',
+                    url: '/resources/icons/Char.png',
                     // This marker is 20 pixels wide by 32 pixels high.
                     size: new google.maps.Size(55, 55),
                     origin: new google.maps.Point(0, 0),
