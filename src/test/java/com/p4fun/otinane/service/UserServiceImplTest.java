@@ -54,7 +54,7 @@ public class UserServiceImplTest {
 
         userService.findByUsername(username);
 
-        Mockito.verify(userRepository, VerificationModeFactory.times(1)).findByUsername(Mockito.any());
+        Mockito.verify(userRepository, VerificationModeFactory.times(1)).findByUsername(Mockito.anyString());
     }
 
 }
