@@ -30,10 +30,10 @@ public class InventoryController {
     }
 
     @RequestMapping(value = "/inventory", method = RequestMethod.POST)
-    public ResponseEntity<?> addItemToInventory(@RequestParam("username")String username,
+    public String addItemToInventory(@RequestParam("username")String username,
                                    @RequestParam("item")String item){
         inventoryService.addItemToInventory(username, item);
-        return ResponseEntity.ok(HttpStatus.OK);
+        return "map";
     }
 
 }

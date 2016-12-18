@@ -48,4 +48,13 @@ public class UserServiceImplTest {
         Mockito.reset(userRepository);
     }
 
+    @Test
+    public void testFindUserByUsername() throws Exception{
+        String username = "qwertyui";
+
+        userService.findByUsername(username);
+
+        Mockito.verify(userRepository, VerificationModeFactory.times(1)).findByUsername(Mockito.any());
+    }
+
 }

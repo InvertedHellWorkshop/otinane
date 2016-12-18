@@ -44,6 +44,15 @@ public class UserRepositoryTest {
         //userRepository.delete(username);
     }
 
+    @Test
+    public void testFindOneFailNoSuchUser() throws Exception{
+        String username="test";
+
+        User dbUser=userRepository.findByUsername(username);
+        Assert.assertNull(dbUser);
+
+    }
+
    
 
 
