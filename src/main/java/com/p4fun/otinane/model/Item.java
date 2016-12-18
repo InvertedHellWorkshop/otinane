@@ -14,6 +14,7 @@ public class Item {
     private double latitude;
     private double longitude;
     private String description;
+    private String Sapantisi;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -56,4 +57,7 @@ public class Item {
     public String getDescription(){
         return description;
     }
+
+    public void setSapantisi(String Sapantisi) {this.Sapantisi = Sapantisi;}
+    public String getSapantisi() {return Sapantisi;}
 }

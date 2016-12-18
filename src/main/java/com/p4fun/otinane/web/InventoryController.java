@@ -5,10 +5,8 @@ package com.p4fun.otinane.web;
  */
 
 import com.p4fun.otinane.model.Item;
-
 import com.p4fun.otinane.service.InventoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,5 +33,6 @@ public class InventoryController {
         inventoryService.addItemToInventory(username, item);
         return "map";
     }
+
 
 }

@@ -6,10 +6,10 @@ INSERT INTO user (username, password) VALUES ('Chrisyme','12345678');
 INSERT INTO user (username, password) VALUES ('Iordmert','12345678');
 INSERT INTO user (username, password) VALUES ('Ozinukaa','12345678');
 
-INSERT INTO item (name, latitude, longitude, description) VALUES ('Books', 41.076224, 23.554250, 'Never gonna give you up');
-INSERT INTO item (name, latitude, longitude, description) VALUES ('Food', 41.075723, 23.551064, 'never gonna let you down');
-INSERT INTO item (name, latitude, longitude, description) VALUES ('Coffee', 41.074687, 23.553934, 'Never gonna run around and desert you');
-INSERT INTO item (name, latitude, longitude, description) VALUES ('Diploma', 41.075322, 23.554138, 'Never gonna make you cry, never gonna say goodbye. Never gonna tell a lie and hurt you');
+INSERT INTO item (name, latitude, longitude, description, Sapantisi) VALUES ('Books', 41.076224, 23.554250, 'Riddle about Books','Books');
+INSERT INTO item (name, latitude, longitude, description, Sapantisi) VALUES ('Food', 41.075723, 23.551064, 'Riddle about Food','Food');
+INSERT INTO item (name, latitude, longitude, description, Sapantisi) VALUES ('Coffee', 41.074687, 23.553934, 'Riddle about Coffee','Coffee');
+INSERT INTO item (name, latitude, longitude, description, Sapantisi) VALUES ('Diploma', 41.075322, 23.554138, 'Riddle about Diploma','Diploma');
 
 INSERT INTO inventory (user_id, item_id) VALUES (5,1);
 INSERT INTO inventory (user_id, item_id) VALUES (5,2);

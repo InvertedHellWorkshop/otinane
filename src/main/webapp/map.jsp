@@ -1,3 +1,4 @@
+
 <!--
 * Created by Inverted Hell Workshop Death Crew on a cold and dreary day.
 */-->
@@ -5,38 +6,62 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
+
 
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Geolocation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link href="${contextPath}/resources/css/map.css" rel="stylesheet">
     <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-        #map-canvas {
-            height: 100%;
-        }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+
     </style>
 </head>
 <body>
-<div id="map-canvas"></div>
+
+<div id="map-canvas">
+    </div>
+    <div class="inventory overlap">
+        <div id="inventory">
+            <h1>Inventory</h1>
+            <p>   <script>
+                var status1 = "${flag1}";
+                if(status1 == "ok") {
+                    var apantisi = "${apantisi}";
+                    document.write(apantisi);
+                }
+            </script>
+            </p>
+        </div>
+        <div class="msgBox overlap">
+            <div id="msgBox">
+
+                <p>  <script>
+                    var message2 = "${message}";
+                    document.write(message2);
+                </script>
+                </p>
+                <a id="close">[close]</a>
+
+            </div>
+            <script>
+                close = document.getElementById("close");
+                close.addEventListener('click', function() {
+                    var msgBox = document.getElementById("msgBox");
+                    msgBox.style.display = 'none';
+                }, false);
+            </script>
+        </div>
+    </div>
 <script>
-    // Note: This example requires that you consent to location sharing when
-    // prompted by your browser. If you see the error "The Geolocation service
-    // failed.", it means you probably did not give permission for the browser to
-    // locate you.
     var x = document.getElementById("map-canvas");
     function initMap() {
-
 
 
         if (navigator.geolocation) {
@@ -49,7 +74,6 @@
             var resultx = new google.maps.LatLng(latx, lonx);
 
 
-
             var map = new google.maps.Map(document.getElementById('map-canvas'), {
                 zoom: 17,
                 scrollwheel: true,
@@ -59,166 +83,141 @@
 
             });
 
-
-            var infowindow = new google.maps.InfoWindow();
-
-            var imageDiploma = {
-                url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/yellow-comment-bubbles-icons-people-things/067543-yellow-comment-bubbles-icon-people-things-diploma-sc2.png',
-                // This marker is 20 pixels wide by 32 pixels high.
-                size: new google.maps.Size(70, 70),
-                origin: new google.maps.Point(0, 0),
-                anchor: new google.maps.Point(17, 34),
-                scaledSize: new google.maps.Size(70, 70)
-
-            };
-
-
-            var marker4 = new google.maps.Marker({
-
-                position: new google.maps.LatLng(41.075322, 23.554138),
-                map: map,
-                icon: imageDiploma
-
-            });
-
-
-
-
-            google.maps.event.addListener(marker4, 'click', (function (marker4) {
-                return function () {
-                    infowindow.setContent("Diploma");
-                    infowindow.open(map, marker4);
+            var xmlhttp = new XMLHttpRequest();
+            var url = "http://localhost:8080/items";
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var itemsCollection = JSON.parse(this.responseText);
+                    printItems(itemsCollection)
                 }
-            })(marker4))
-
-            var imageCoffee = {
-                url: '/resources/icons/Coffee.png',
-                // This marker is 20 pixels wide by 32 pixels high.
-                size: new google.maps.Size(55, 55),
-                origin: new google.maps.Point(0, 0),
-                anchor: new google.maps.Point(17, 34),
-                scaledSize: new google.maps.Size(55, 55)
-
             };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+
+           // '<form class="form-wrapper cf"> <input type="text" id="field1" value=""  placeholder="Write your Answer" required> <button type="submit" onclick="myFunction()">OK</button></form>'
+            var infowindow = new google.maps.InfoWindow;
+            var path =["${contextPath}/answerform","${contextPath}/answerform1"] ;
+            var message2 = "${message}";
+            var arxiko=[];
+            var status1=[];
+            var contentString=[];
+            var Swsto=[];
+            var Lathos=[];
+            var radius = 0.000120;
+            var bottomItemLat = [];
+            var upperItemLat = [];
+            var bottomItemLng = [];
+            var upperItemLng = [];
 
 
-            var marker3 = new google.maps.Marker({
+            function printItems(items) {
+                var out = "";
+                var marker, i;
+                for (i = 0; i < items.length; i++) {
+                    out += 'Name:' + items[i].name + '</br>Description:' + items[i].description + '<br><br>';
+                    arxiko[i] = '<h1 id="firstHeading" class="firstHeading">'+items[i].name+'</h1>'+items[i].description+'<br><br><br>'+
+                            '<form name="answerform'+i+'" method="POST" action='+path[i]+'>'+
+                            'Answer <input type="text" placeholder="Think before you write" name="fname'+i+'"><br>'+
+                            '<input type="submit" value="OK"> </form> ';
+                    Swsto[i]="Your answer for riddle about"+items[i].name+"was Correct";
+                    Lathos[i]='<h1 id="firstHeading" class="firstHeading">'+items[i].name+'</h1>'+items[i].description+'<br><br><br>'+
+                            '<form name="answerform'+i+'" method="POST" action='+path[i]+'>'+
+                            'Answer <input type="text" placeholder="Think before you write" name="fname'+i+'"><br>'+
+                            '<input type="submit" value="OK"> </form>' +
+                            '<span>'+message2+'</span> ';
 
-                position: new google.maps.LatLng(41.074687, 23.553934),
-                map: map,
-                icon: imageCoffee
+                    //database checking status
+                   /* if(items[i].Status=="A"){
+                        contentString[i]=arxiko[i];
+                    }else if(items[i].Status=="S"){
+                        contentString[i]=Swsto[i];
+                    }else{
+                        contentString[i]=Lathos[i];
+                    }*/
+                    //contentString[i] =items[i].grifos+'<form method="POST" class="form-wrapper cf"><input type="text"  id="field1" value=""  placeholder="Write your Answer" required><button type="button" onclick="myFunction()">OK</button> </form>';
+                    var image = {
+                            url: '/resources/images/'+items[i].name+'.png',
+                            size: new google.maps.Size(55, 55),
+                            origin: new google.maps.Point(0, 0),
+                            anchor: new google.maps.Point(17, 34),
+                            scaledSize: new google.maps.Size(55, 55)
+                        };
+                        marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(items[i].latitude, items[i].longitude),
+                            map: map,
+                            icon: image
 
-            });
+                        });
 
 
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                            return function () {
+                                //var outLat = 'user lat: ' + latx + ' ,' + bottomItemLat + ' ... ' + upperItemLat;
+                                //var outLng = 'user lng: ' + lonx + ' ,' + bottomItemLng + ' ... ' + upperItemLng;
+                                //document.getElementById("test").innerHTML = outLat+'<br>'+ outLng;
 
+                                bottomItemLat[i] = items[i].latitude - radius;
+                                upperItemLat[i] = items[i].latitude + radius;
+                                bottomItemLng[i] = items[i].longitude - radius;
+                                upperItemLng[i] = items[i].longitude + radius;
 
-            google.maps.event.addListener(marker3, 'click', (function (marker3) {
-                return function () {
-                    infowindow.setContent("Coffee");
-                    infowindow.open(map, marker3);
+                                if ((latx >= upperItemLat[i] || latx <= bottomItemLat[i]) && (lonx >= upperItemLng[i] || lonx <= bottomItemLng[i])) {
+                                    infowindow.setContent("You are not in range to see this riddle");
+                                } else {
+                                    status1[0]= "${flag1}";
+                                status1[1]="${flag2}";
+                                //Push to item.Status
+                                if (status1[i] == "ok" ) {
+                                        infowindow.setContent("${message}");
+                                } else {
+                                        infowindow.setContent(arxiko[i]);
+
+                                    }
+
+                               }
+                                infowindow.open(map, marker);
+                            }
+                        })(marker, i));
                 }
-            })(marker3))
 
-
+            }
 
             var imageChar = {
-                url: 'http://i747.photobucket.com/albums/xx112/Studio-119-Degrees/Logos%20and%20Icons/icon-dex-littleguy.png',
-                // This marker is 20 pixels wide by 32 pixels high.
-                size: new google.maps.Size(55, 55),
-                origin: new google.maps.Point(0, 0),
-                anchor: new google.maps.Point(17, 34),
-                scaledSize: new google.maps.Size(55, 55)
+                    url: '/resources/images/Char.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(55, 55),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(55, 55)
 
-            };
-
-
-            var marker2 = new google.maps.Marker({
-
-                position: new google.maps.LatLng(latx , lonx),
-                map: map,
-                icon: imageChar
-
-            });
+                };
 
 
+                var marker2 = new google.maps.Marker({
+
+                    position: new google.maps.LatLng(latx, lonx),
+                    map: map,
+                    icon: imageChar
+
+                });
 
 
-            google.maps.event.addListener(marker2, 'click', (function (marker2) {
-                return function () {
-                    infowindow.setContent("You are HERE");
-                    infowindow.open(map, marker2);
-                }
-            })(marker2))
+                google.maps.event.addListener(marker2, 'click', (function (marker2) {
+                    return function () {
+                        infowindow.setContent("You are HERE");
+                        infowindow.open(map, marker2);
+                    }
+                })(marker2))
 
-
-            var imageFood = {
-                url: '/resources/icons/Food.png',
-                // This marker is 20 pixels wide by 32 pixels high.
-                size: new google.maps.Size(55, 55),
-                origin: new google.maps.Point(0, 0),
-                anchor: new google.maps.Point(17, 34),
-                scaledSize: new google.maps.Size(55, 55)
-
-            };
-
-
-
-
-            var marker = new google.maps.Marker({
-
-                position: new google.maps.LatLng(41.075723, 23.551064),
-                map: map,
-                icon: imageFood,
-
-            });
-
-
-
-            google.maps.event.addListener(marker, 'click', (function (marker) {
-                return function () {
-                    infowindow.setContent("Food");
-                    infowindow.open(map, marker);
-                }
-            })(marker))
-
-
-            var imageBooks = {
-                url: '/resources/icons/Books.png',
-                // This marker is 20 pixels wide by 32 pixels high.
-                size: new google.maps.Size(55, 55),
-                origin: new google.maps.Point(0, 0),
-                anchor: new google.maps.Point(17, 34),
-                scaledSize: new google.maps.Size(55, 55)
-
-            };
-
-
-            var marker1 = new google.maps.Marker({
-
-                position: new google.maps.LatLng(41.076224, 23.554250),
-                map: map,
-                icon: imageBooks
-
-            });
-
-
-
-            google.maps.event.addListener(marker1, 'click', (function (marker1) {
-                return function () {
-                    infowindow.setContent("Books");
-                    infowindow.open(map, marker1);
-                }
-            })(marker1))
-            ;
-
-
-
+            }
         }
-    }
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ_CL_bAA7VK5OVfdkZNRSF8s7qEkcPj0&callback=initMap">
 </script>
+
+
+
+
 </body>
 </html>
