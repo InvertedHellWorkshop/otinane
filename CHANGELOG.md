@@ -8,6 +8,24 @@ Changelog of Git Changelog.
             **Minor corrections that resolved an error**
 
 
+            [e62ef7ed0c81033](https://github.com/InvertedHellWorkshop/otinane/commit/e62ef7ed0c81033) Immortuon *2016-12-18 16:47:01*
+
+            **Added map.css**
+
+
+            [4bcaa0d5abdbb3d](https://github.com/InvertedHellWorkshop/otinane/commit/4bcaa0d5abdbb3d) iordmert *2016-12-18 16:25:38*
+
+            **Updated: Map.jsp**
+
+                * Updated: Item.java Class
+                * Updated: ItemController Class
+                * Updated: Database Population
+
+            [d02a990ff12c30f](https://github.com/InvertedHellWorkshop/otinane/commit/d02a990ff12c30f) iordmert *2016-12-18 16:14:37*
+
+            **Minor corrections that resolved an error**
+
+
             [d92dce085b8f0d3](https://github.com/InvertedHellWorkshop/otinane/commit/d92dce085b8f0d3) Immortuon *2016-12-18 12:33:08*
 
             **Optimization and uniformity changes**
