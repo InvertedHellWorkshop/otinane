@@ -4,7 +4,7 @@
 
 	<groupId>com.p4fun.otinane</groupId>
 	<artifactId>otinane</artifactId>
-	<version><!--${project.version.major}.${project.version.minor}.${project.version.patch}.-->1-SNAPSHOT-${currentVersion}</version>
+	<version><!--${project.version.major}.${project.version.minor}.${project.version.patch}.-->1-${currentVersion}-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<!--<project.version.major>0</project.version.major>
