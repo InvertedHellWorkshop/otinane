@@ -5,6 +5,13 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Added Beta Testing feedback**
+
+                * Added JMeter and SOAPUI testing in pom.xml
+                * Changed versioning procedure
+
+            [42af9e3b976086a](https://github.com/InvertedHellWorkshop/otinane/commit/42af9e3b976086a) Immortuon *2017-01-05 16:13:44*
+
             **Update README.md**
 
 
