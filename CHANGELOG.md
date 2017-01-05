@@ -5,6 +5,16 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Update README.md**
+
+
+            [a00d1c25436d718](https://github.com/InvertedHellWorkshop/otinane/commit/a00d1c25436d718) Yannis Kiachidis *2016-12-21 18:08:40*
+
+            **Minor corrections that resolved an error**
+
+
+            [37dfdcf2c3f5d7b](https://github.com/InvertedHellWorkshop/otinane/commit/37dfdcf2c3f5d7b) Immortuon *2016-12-19 17:42:59*
+
             **Minor corrections that resolved an error**
 
 

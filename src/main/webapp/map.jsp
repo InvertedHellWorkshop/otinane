@@ -220,4 +220,30 @@
 
 
 </body>
+<script type="text/javascript">
+    // <![CDATA[
+    if ("http:" == document.location.protocol || "https:" == document.location.protocol) {
+        document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https://dq14tx02jmrhj.cloudfront.net" : "http://cdn.betaeasy.com") + "/betaeasy.js' type='text/javascript'%3E%3C/script%3E"))
+    }
+    // ]]>
+</script>
+<script type="text/javascript">
+    // <![CDATA[
+    try {
+        BetaEasy.init({
+            betaId: '2144',
+            styleType: 'new',
+            buttonAlign: 'right',
+            language: 'en',
+            buttonBackgroundColor: '#f00',
+            buttonMouseHoverBackgroundColor: '#06C',
+            buttonImageActive: 'en/newbtn-13.png',
+            buttonImageHover: 'none',
+            backgroundColor: 'undefined',
+            tabsInactiveColor: 'undefined',
+            tabsInactiveTextColor: 'undefined'
+        });
+    } catch(err) {}
+    // ]]>
+</script>
 </html>
