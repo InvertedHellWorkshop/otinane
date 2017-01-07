@@ -5,6 +5,21 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Updated pom.xml to use newVersion property**
+
+
+            [66657ca0583cc1c](https://github.com/InvertedHellWorkshop/otinane/commit/66657ca0583cc1c) Immortuon *2017-01-07 17:00:26*
+
+            **Fixed versions maven plugin in pom.xml**
+
+
+            [1a78a1bf206e5dd](https://github.com/InvertedHellWorkshop/otinane/commit/1a78a1bf206e5dd) Immortuon *2017-01-07 16:51:27*
+
+            **Fixed pom.xml**
+
+
+            [3b6e49b9e389316](https://github.com/InvertedHellWorkshop/otinane/commit/3b6e49b9e389316) Immortuon *2017-01-07 16:46:47*
+
             **Fixed pom.xml**
 
 
