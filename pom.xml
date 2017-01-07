@@ -4,7 +4,7 @@
 
 	<groupId>com.p4fun.otinane</groupId>
 	<artifactId>otinane</artifactId>
-	<version><!--${project.version.major}.${project.version.minor}.${project.version.patch}.-->1-${currentVersion}-SNAPSHOT</version>
+	<version><!--${project.version.major}.${project.version.minor}.${project.version.patch}.-->1-${newVersion}-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<!--<project.version.major>0</project.version.major>
@@ -25,7 +25,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<currentVersion>env.BUILD_NUMBER</currentVersion>
+		<newVersion>env.BUILD_NUMBER</newVersion>
 
 		<!--<currentVersion>0</currentVersion>
 		<appVersion>0.0.${currentVersion}-SNAPSHOT</appVersion>-->
