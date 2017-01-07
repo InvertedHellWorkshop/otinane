@@ -5,6 +5,31 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Commited possible modified files that intercept CI release**
+
+
+            [30a737043aba6b4](https://github.com/InvertedHellWorkshop/otinane/commit/30a737043aba6b4) Immortuon *2017-01-07 14:46:22*
+
+            **Minor versioning changes**
+
+
+            [768c175d5a196ee](https://github.com/InvertedHellWorkshop/otinane/commit/768c175d5a196ee) Immortuon *2017-01-07 14:38:01*
+
+            **Minor changes regarding project versioning**
+
+
+            [d1a1fdd297c2abb](https://github.com/InvertedHellWorkshop/otinane/commit/d1a1fdd297c2abb) Immortuon *2017-01-07 14:16:57*
+
+            **Minor changes regarding changelog**
+
+
+            [680328db01c61e0](https://github.com/InvertedHellWorkshop/otinane/commit/680328db01c61e0) Immortuon *2017-01-07 13:58:38*
+
+            **Commited possible modified files that intercept CI release**
+
+
+            [4834c82658d2c4e](https://github.com/InvertedHellWorkshop/otinane/commit/4834c82658d2c4e) Immortuon *2017-01-07 13:36:17*
+
             **Added release configuration in pom.xml**
 
 
@@ -76,7 +101,7 @@ Changelog of Git Changelog.
             [a0e25abf277b914](https://github.com/InvertedHellWorkshop/otinane/commit/a0e25abf277b914) Hrystos *2016-12-17 19:29:41*
 
 
-    ## release-build-79
+    ## 79
             ### No issue
 
             **Update README.md**
@@ -85,7 +110,7 @@ Changelog of Git Changelog.
             [fa7567384e90dc3](https://github.com/InvertedHellWorkshop/otinane/commit/fa7567384e90dc3) Yannis Kiachidis *2016-12-17 18:03:25*
 
 
-    ## release-build-78
+    ## 78
             ### No issue
 
             **Added JaCoCo test coverage support**
@@ -94,7 +119,7 @@ Changelog of Git Changelog.
             [ef8e44a5fbe8481](https://github.com/InvertedHellWorkshop/otinane/commit/ef8e44a5fbe8481) Immortuon *2016-12-17 15:45:05*
 
 
-    ## release-build-77
+    ## 77
             ### No issue
 
             **Experimenting with Mediawiki support on project's auto-generated changelog**
@@ -103,7 +128,7 @@ Changelog of Git Changelog.
             [7a1519ed313a0b4](https://github.com/InvertedHellWorkshop/otinane/commit/7a1519ed313a0b4) Immortuon *2016-12-17 14:39:52*
 
 
-    ## release-build-76
+    ## 76
             ### No issue
 
             **Added Mediawiki support on project's auto-generated changelog**
@@ -112,7 +137,7 @@ Changelog of Git Changelog.
             [f7122fdf6ffa8f2](https://github.com/InvertedHellWorkshop/otinane/commit/f7122fdf6ffa8f2) Immortuon *2016-12-17 14:37:07*
 
 
-    ## release-build-75
+    ## 75
             ### No issue
 
             **Added Mediawiki support on project's auto-generated changelog**
@@ -126,7 +151,7 @@ Changelog of Git Changelog.
             [0014ecc23aa7fb3](https://github.com/InvertedHellWorkshop/otinane/commit/0014ecc23aa7fb3) Immortuon *2016-12-16 17:22:47*
 
 
-    ## release-build-73
+    ## 73
             ### No issue
 
             **Experimenting with travis.yml file**
@@ -135,7 +160,7 @@ Changelog of Git Changelog.
             [a4020b30d21df35](https://github.com/InvertedHellWorkshop/otinane/commit/a4020b30d21df35) Immortuon *2016-12-15 20:36:45*
 
 
-    ## release-build-72
+    ## 72
             ### No issue
 
             **Experimenting with travis.yml file**
@@ -144,7 +169,7 @@ Changelog of Git Changelog.
             [64edd90c9647d55](https://github.com/InvertedHellWorkshop/otinane/commit/64edd90c9647d55) Immortuon *2016-12-15 20:35:04*
 
 
-    ## release-build-71
+    ## 71
             ### No issue
 
             **Experimenting with travis.yml file**
@@ -153,7 +178,7 @@ Changelog of Git Changelog.
             [92cfb32de20f1b7](https://github.com/InvertedHellWorkshop/otinane/commit/92cfb32de20f1b7) Immortuon *2016-12-15 20:30:53*
 
 
-    ## release-build-70
+    ## 70
             ### No issue
 
             **Experimenting with travis.yml file**
@@ -162,7 +187,7 @@ Changelog of Git Changelog.
             [4f287d7dcd5f8a4](https://github.com/InvertedHellWorkshop/otinane/commit/4f287d7dcd5f8a4) Immortuon *2016-12-15 20:26:58*
 
 
-    ## release-build-69
+    ## 69
             ### No issue
 
             **Experimenting with travis.yml file**
@@ -182,7 +207,7 @@ Changelog of Git Changelog.
             [fbb57e803794238](https://github.com/InvertedHellWorkshop/otinane/commit/fbb57e803794238) Immortuon *2016-12-15 19:14:28*
 
 
-    ## release-build-63
+    ## 63
             ### No issue
 
             **Configured dynamic versioning**
@@ -196,7 +221,7 @@ Changelog of Git Changelog.
             [cf77e400ff897bd](https://github.com/InvertedHellWorkshop/otinane/commit/cf77e400ff897bd) Immortuon *2016-12-12 17:14:32*
 
 
-    ## release-build-60
+    ## 60
             ### No issue
 
             **Updated CAHNGELOG.md**
@@ -210,7 +235,7 @@ Changelog of Git Changelog.
             [d12279601a0a625](https://github.com/InvertedHellWorkshop/otinane/commit/d12279601a0a625) Yannis Kiachidis *2016-12-12 16:55:15*
 
 
-    ## release-build-59
+    ## 59
             ### No issue
 
             **Added changelog.mustache in classpath**
@@ -220,7 +245,7 @@ Changelog of Git Changelog.
             [ab6cf63114c4a8b](https://github.com/InvertedHellWorkshop/otinane/commit/ab6cf63114c4a8b) Immortuon *2016-12-12 16:48:54*
 
 
-    ## release-build-58
+    ## 58
             ### No issue
 
             **Added Mustache dependency in pom.xml file**
@@ -229,23 +254,8 @@ Changelog of Git Changelog.
             [65a3975b156abca](https://github.com/InvertedHellWorkshop/otinane/commit/65a3975b156abca) Immortuon *2016-12-12 16:10:49*
 
 
-    ## release-build-55
-            ### No issue
-
-            **Experimenting with Git Changelog Maven custom plugin**
-
-
-            [d299dd2527a2f04](https://github.com/InvertedHellWorkshop/otinane/commit/d299dd2527a2f04) Immortuon *2016-12-12 15:51:10*
-
-            **Experimenting with Maven reporting plugin**
-
-
-            [b35df7e7a2b952c](https://github.com/InvertedHellWorkshop/otinane/commit/b35df7e7a2b952c) Immortuon *2016-12-12 15:17:02*
-
-            **Added Maven reporting plugin**
-
-
-            [bca8cbda6369cdb](https://github.com/InvertedHellWorkshop/otinane/commit/bca8cbda6369cdb) Immortuon *2016-12-12 15:12:16*
+    ## 55
+                ### GitHub #13 
 
             **#13 Inventory Backend**
 
@@ -272,6 +282,9 @@ Changelog of Git Changelog.
 
             [2fe248efe521dce](https://github.com/InvertedHellWorkshop/otinane/commit/2fe248efe521dce) Hrystos *2016-12-09 09:49:03*
 
+
+                ### GitHub #20 
+
             **#20 Usage of Items Backend**
 
                 * added description at item model
@@ -282,7 +295,25 @@ Changelog of Git Changelog.
             [8ccd4a7ef8ff112](https://github.com/InvertedHellWorkshop/otinane/commit/8ccd4a7ef8ff112) Hrystos *2016-12-07 12:18:01*
 
 
-    ## release-build-56
+            ### No issue
+
+            **Experimenting with Git Changelog Maven custom plugin**
+
+
+            [d299dd2527a2f04](https://github.com/InvertedHellWorkshop/otinane/commit/d299dd2527a2f04) Immortuon *2016-12-12 15:51:10*
+
+            **Experimenting with Maven reporting plugin**
+
+
+            [b35df7e7a2b952c](https://github.com/InvertedHellWorkshop/otinane/commit/b35df7e7a2b952c) Immortuon *2016-12-12 15:17:02*
+
+            **Added Maven reporting plugin**
+
+
+            [bca8cbda6369cdb](https://github.com/InvertedHellWorkshop/otinane/commit/bca8cbda6369cdb) Immortuon *2016-12-12 15:12:16*
+
+
+    ## 56
             ### No issue
 
             **Create README.md**
@@ -291,7 +322,7 @@ Changelog of Git Changelog.
             [79e05c655fe1054](https://github.com/InvertedHellWorkshop/otinane/commit/79e05c655fe1054) Yannis Kiachidis *2016-12-11 21:20:13*
 
 
-    ## release-build-48
+    ## 48
             ### No issue
 
             **Added Maven reporting plugin**
@@ -305,7 +336,7 @@ Changelog of Git Changelog.
             [087c7061b4231e0](https://github.com/InvertedHellWorkshop/otinane/commit/087c7061b4231e0) Immortuon *2016-12-08 19:41:08*
 
 
-    ## release-build-42
+    ## 42
             ### No issue
 
             **Minor changes in application properties**
@@ -314,7 +345,7 @@ Changelog of Git Changelog.
             [9cde96ae14e9742](https://github.com/InvertedHellWorkshop/otinane/commit/9cde96ae14e9742) Immortuon *2016-12-07 20:51:00*
 
 
-    ## release-build-33
+    ## 33
             ### No issue
 
             **Updated map.jsp file to put the items on the map**
@@ -326,7 +357,16 @@ Changelog of Git Changelog.
             [d3d407e3345ee50](https://github.com/InvertedHellWorkshop/otinane/commit/d3d407e3345ee50) Immortuon *2016-12-04 19:38:35*
 
 
-    ## build-19
+    ## 19
+                ### GitHub [#3](https://github.com/InvertedHellWorkshop/otinane/issues/3) Items backend (Model, Repository, Service, Controller) with Tests
+
+            **Issue #3 Items backend with test**
+
+                * Created model, repository, service and controller for getting all the items from db
+
+            [872bc7b3f7ef528](https://github.com/InvertedHellWorkshop/otinane/commit/872bc7b3f7ef528) Hrystos *2016-11-29 10:49:54*
+
+
             ### No issue
 
             **Disabled LoginTest due to incompatibility issues**
@@ -347,14 +387,29 @@ Changelog of Git Changelog.
 
             [cf3ecff59d7eb38](https://github.com/InvertedHellWorkshop/otinane/commit/cf3ecff59d7eb38) Immortuon *2016-12-02 20:24:58*
 
-            **Issue #3 Items backend with test**
 
-                * Created model, repository, service and controller for getting all the items from db
+    ## 22
+                ### GitHub [#1](https://github.com/InvertedHellWorkshop/otinane/issues/1) Create Test InsertUserSuccess
 
-            [872bc7b3f7ef528](https://github.com/InvertedHellWorkshop/otinane/commit/872bc7b3f7ef528) Hrystos *2016-11-29 10:49:54*
+            **Issue #1 Test for successfully inserting a user into repository**
 
 
-    ## build-22
+            [a6cf88c428ef929](https://github.com/InvertedHellWorkshop/otinane/commit/a6cf88c428ef929) Hrystos *2016-11-19 13:38:11*
+
+            **Issue #1 Test for successfully inserting a user into repository**
+
+
+            [11209fa885c10b2](https://github.com/InvertedHellWorkshop/otinane/commit/11209fa885c10b2) Hrystos *2016-11-19 11:35:04*
+
+
+                ### GitHub [#2](https://github.com/InvertedHellWorkshop/otinane/issues/2) Populate DB with data at Startup
+
+            **Issue #2 Populate DB with data at startup**
+
+
+            [fb128219e8849b0](https://github.com/InvertedHellWorkshop/otinane/commit/fb128219e8849b0) Hrystos *2016-11-19 14:38:27*
+
+
             ### No issue
 
             **Refined UserServiceImpl class**
@@ -378,23 +433,8 @@ Changelog of Git Changelog.
 
             [2d134beda3ec3e7](https://github.com/InvertedHellWorkshop/otinane/commit/2d134beda3ec3e7) Immortuon *2016-11-19 14:45:50*
 
-            **Issue #2 Populate DB with data at startup**
 
-
-            [fb128219e8849b0](https://github.com/InvertedHellWorkshop/otinane/commit/fb128219e8849b0) Hrystos *2016-11-19 14:38:27*
-
-            **Issue #1 Test for successfully inserting a user into repository**
-
-
-            [a6cf88c428ef929](https://github.com/InvertedHellWorkshop/otinane/commit/a6cf88c428ef929) Hrystos *2016-11-19 13:38:11*
-
-            **Issue #1 Test for successfully inserting a user into repository**
-
-
-            [11209fa885c10b2](https://github.com/InvertedHellWorkshop/otinane/commit/11209fa885c10b2) Hrystos *2016-11-19 11:35:04*
-
-
-    ## RELEASE_8
+    ## refs/tags/RELEASE_8
             ### No issue
 
             **UserServiceImpl Test - Add User Success**
@@ -403,7 +443,7 @@ Changelog of Git Changelog.
             [3b79740a1808c6a](https://github.com/InvertedHellWorkshop/otinane/commit/3b79740a1808c6a) Hrystos *2016-11-20 10:59:45*
 
 
-    ## build-11
+    ## 11
             ### No issue
 
             **Added Role class**
