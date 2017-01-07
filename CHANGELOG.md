@@ -2,7 +2,16 @@
 
 Changelog of Git Changelog.
 
-    ## Unreleased
+    ## 112
+            ### No issue
+
+            **Minor fixes regarding duplicates of slf4j and bugs on versions plugin**
+
+
+            [f59b82a652e4f66](https://github.com/InvertedHellWorkshop/otinane/commit/f59b82a652e4f66) Immortuon *2017-01-07 17:08:10*
+
+
+    ## 110
             ### No issue
 
             **Updated pom.xml to use newVersion property**
@@ -85,6 +94,10 @@ Changelog of Git Changelog.
 
             [025ec66db60189e](https://github.com/InvertedHellWorkshop/otinane/commit/025ec66db60189e) Immortuon *2017-01-05 19:07:36*
 
+
+    ## 85
+            ### No issue
+
             **Added Beta Testing feedback**
 
                 * Added JMeter and SOAPUI testing in pom.xml
@@ -97,10 +110,18 @@ Changelog of Git Changelog.
 
             [a00d1c25436d718](https://github.com/InvertedHellWorkshop/otinane/commit/a00d1c25436d718) Yannis Kiachidis *2016-12-21 18:08:40*
 
+
+    ## 83
+            ### No issue
+
             **Minor corrections that resolved an error**
 
 
             [37dfdcf2c3f5d7b](https://github.com/InvertedHellWorkshop/otinane/commit/37dfdcf2c3f5d7b) Immortuon *2016-12-19 17:42:59*
+
+
+    ## 82
+            ### No issue
 
             **Minor corrections that resolved an error**
 
@@ -119,6 +140,10 @@ Changelog of Git Changelog.
                 * Updated: Database Population
 
             [d02a990ff12c30f](https://github.com/InvertedHellWorkshop/otinane/commit/d02a990ff12c30f) iordmert *2016-12-18 16:14:37*
+
+
+    ## 81
+            ### No issue
 
             **Minor corrections that resolved an error**
 
