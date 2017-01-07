@@ -247,6 +247,11 @@
 						<configuration>
 							<!-- A file on filesystem //-->
 							<filePath>CHANGELOG.md</filePath>
+							<gitHubApi>https://api.github.com/repos/InvertedHellWorkshop/otinane</gitHubApi>
+							<!--<gitHubToken>${GITHUB_OAUTH2TOKEN}</gitHubToken> Optional // -->
+							<gitHubIssuePattern>#([0-9]*)</gitHubIssuePattern>
+							<templateFile>changelog.mustache</templateFile>
+							<readableTagName>-([^-]+?)$</readableTagName>
 
 							<!--<mediaWikiUsername>Immortuon</mediaWikiUsername>
 							<mediaWikiPassword>25i08/1991</mediaWikiPassword>
