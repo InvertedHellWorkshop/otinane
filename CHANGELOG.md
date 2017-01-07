@@ -5,6 +5,16 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Fixes on pom.xml**
+
+
+            [5458815ee778d82](https://github.com/InvertedHellWorkshop/otinane/commit/5458815ee778d82) Immortuon *2017-01-07 15:36:32*
+
+            **Removes Spring Boot logging because of conflicts with slf4j**
+
+
+            [06eed4f955020cd](https://github.com/InvertedHellWorkshop/otinane/commit/06eed4f955020cd) Immortuon *2017-01-07 15:31:28*
+
             **Commited possible modified files that intercept CI release**
 
 
