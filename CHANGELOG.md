@@ -5,6 +5,26 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Added release configuration in pom.xml**
+
+
+            [66c2b073f7016ef](https://github.com/InvertedHellWorkshop/otinane/commit/66c2b073f7016ef) Immortuon *2017-01-05 19:23:04*
+
+            **Experimenting with SCM**
+
+
+            [9e832713a1341d3](https://github.com/InvertedHellWorkshop/otinane/commit/9e832713a1341d3) Immortuon *2017-01-05 19:16:59*
+
+            **Experimenting with SCM**
+
+
+            [7c40cbf60ffab1f](https://github.com/InvertedHellWorkshop/otinane/commit/7c40cbf60ffab1f) Immortuon *2017-01-05 19:10:52*
+
+            **Experimenting with SCM**
+
+
+            [025ec66db60189e](https://github.com/InvertedHellWorkshop/otinane/commit/025ec66db60189e) Immortuon *2017-01-05 19:07:36*
+
             **Added Beta Testing feedback**
 
                 * Added JMeter and SOAPUI testing in pom.xml
