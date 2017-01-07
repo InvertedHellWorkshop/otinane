@@ -5,6 +5,16 @@ Changelog of Git Changelog.
     ## Unreleased
             ### No issue
 
+            **Fixed pom.xml**
+
+
+            [598df2d5ba1b837](https://github.com/InvertedHellWorkshop/otinane/commit/598df2d5ba1b837) Immortuon *2017-01-07 16:05:10*
+
+            **Fixed pom.xml**
+
+
+            [f3299d7bd1fca37](https://github.com/InvertedHellWorkshop/otinane/commit/f3299d7bd1fca37) Immortuon *2017-01-07 15:57:59*
+
             **Fixes on pom.xml**
 
 
