@@ -3,9 +3,7 @@
  */
 
 body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #eee;
+
 }
 
 .form-signin {
@@ -43,6 +41,79 @@ body {
     border-bottom-left-radius: 0;
 }
 
+
+
+
+.bgvid{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+}
+.inner-container{
+    width:400px;
+    height:400px;
+    position:absolute;
+    top:calc(50vh - 200px);
+    left:calc(50vw - 200px);
+    overflow:hidden;
+}
+
+.box{
+    position:absolute;
+    height:100%;
+    width:100%;
+    font-family:Helvetica;
+    color:#fff;
+
+    padding:30px 0px;
+}
+.box h1{
+    text-align:center;
+    margin:30px 0;
+    font-size:30px;
+}
+.box input{
+    display:block;
+    width:230px;
+    margin:20px auto;
+    padding:15px;
+    background: rgba(0, 0, 0, 0.58);
+    color:#fff;
+    border:0;
+}
+#boxcontainer{
+    margin-top:-20px;
+    width:400px;
+    height:400px;
+    background: rgba(0, 0, 0, 0.58);
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+    outline:none;
+}
+.box button{
+    background:#2ecc71;
+    border:0;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
+    width:180px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+}
+.box button:active{
+    background:#27ae60;
+}
+.box p{
+    font-size:14px;
+    text-align:center;
+}
+.box p span{
+    cursor:pointer;
+    color:#666;
+}
+
 .form-signin button {
     margin-top: 10px;
 }
@@ -50,3 +121,5 @@ body {
 .has-error {
     color: red
 }
+
+

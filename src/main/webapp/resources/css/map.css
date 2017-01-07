@@ -1,3 +1,4 @@
+
 #map-canvas{
     width:100%;
     height:100%;
@@ -7,20 +8,35 @@
     z-index:2;
     position:relative;
 }
+
 #msgBox {
-   margin-top:10px;
+
     position: absolute;
     z-index: 101;
     top: 0;
     left: 0;
     right: 0;
-    background: #fde073;
+    background: #af7410;
     text-align: center;
     line-height: 2.5;
     overflow: hidden;
     -webkit-box-shadow: 0 0 5px black;
     -moz-box-shadow:    0 0 5px black;
     box-shadow:         0 0 5px black;
+
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+
+
+    border: solid;
+    color: white;
+    padding: 5px 10px;
+
+    border-radius:4%;
+    overflow: hidden;
+
 }
 
 @-webkit-keyframes slideDown {
@@ -42,13 +58,33 @@
 }
 
 #msgBox h1{
-    text-size:15px;
+    text-size:10px;
 
 }
+#msgBox a{
+    background-color: orange;
+    border: solid;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    border-radius:4%;
+
+}
+
+#msgBox a:hover {
+    background-color: #572b0c;
+    border-radius:8%;
+
+}
+
 
 #msgBox p{
 
 }
+
 
 #bodyContent p{
 
@@ -57,53 +93,108 @@
 
 }
 
- #content h1{
+#fontlayout h1{
     color: #d52415; font-family: "Great Vibes", cursive; font-size: 165px; line-height: 160px;
     font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff;
 
 }
 
 
+
 #inventory{
+    position: absolute;
+    margin-top:250px;
+    width:auto;
+    background: #fde073;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+    position: absolute;
 
-    width:100px;
-    float:right;
-    height:auto;
-    background:transparent;
-    border: 5px solid rgba(6, 6, 6, 0.84);
-    margin-bottom:35px;
 
-
-    -moz-background-clip: border;
-    -webkit-background-clip: border;
-    background-clip: border-box;
-
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box;
-
-  // -moz-background-clip: content;
-    -webkit-background-clip: content;
-    background-clip: content-box;
-
-    border-radius:5px ;
 }
 
 #inventory h1{
-    color: #b48608; font-family: 'Droid serif', serif; font-size: 25px; font-weight: 400; font-style:
-        italic; line-height: 44px; margin: 0 0 12px; text-align: center;
+    color: #b44821; font-family: 'Droid serif', serif; font-size: 16px;  font-style:
+        italic; line-height: 44px; margin: 0 0 12px; text-align: center;text-decoration:underline;text-align:center;
 
 
 }
 
 #inventory p{
 
-    color: black; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 14px;
+    color: black; font-family: 'Droid Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin: 0 0 14px;
 
     text-align: center;
 
+}
+
+#InvButton a{
+    background-color: #af7410;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:absolute;
+    float:left;
+    margin-top:200px;
+    border: solid;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:4%;
+    overflow: hidden;
+
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
 
 }
 
+#InvButton a:hover {
+    background-color: orange;
+    border-radius:8%;
+}
 
+#logOut a{
 
+    background-color: #af7410;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position:absolute;
+    margin-top:300px;
+    margin-right:auto;
+    border: solid;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:4%;
+    overflow: hidden;
+
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+
+}
+
+#logOut a:hover {
+    background-color: orange;
+    border-radius:8%;
+}
