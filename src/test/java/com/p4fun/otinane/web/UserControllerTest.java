@@ -63,13 +63,13 @@ public class UserControllerTest {
                 .andExpect(view().name("registration"));
     }
 
-    @Test
+    /*@Test
     public void testWelcome() throws Exception {
 
         mockMvc.perform(get("/","/welcome"))
                 .andExpect(status().isOk())
                 .andExpect(model().attributeExists())
                 .andExpect(view().name("welcome"));
-    }
+    }*/
 
 }

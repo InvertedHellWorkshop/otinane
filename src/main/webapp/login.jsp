@@ -14,6 +14,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,24 +33,32 @@
 
 <body>
 
-<div class="container">
+
+<style type="text/css">
+    .box{
+        background-image:url('http://cdn-media-1.lifehack.org/wp-content/files/2014/12/Riddle-me-this.jpg');
+    }
+</style>
+<div class="box" type>
 
     <form method="POST" action="${contextPath}/login" class="form-signin">
-        <h2 class="form-heading">Log in</h2>
+        <div id="boxcontainer">
+            <h1>Log in</h1>
 
-        <div class="form-group ${error != null ? 'has-error' : ''}">
-            <span>${message}</span>
-            <input name="username" type="text" class="form-control" placeholder="Username"
-                   autofocus="true"/>
-            <input name="password" type="password" class="form-control" placeholder="Password"/>
-            <span>${error}</span>
-           <!-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>-->
+            <div class="form-group ${error != null ? 'has-error' : ''}">
+                <span>${message}</span>
+                <input name="username" type="text" class="form-control" placeholder="Username"
+                       autofocus="true"/>
+                <input name="password" type="password" class="form-control" placeholder="Password"/>
+                <span>${error}</span>
+                <!-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>-->
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
-            <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+                <p><a href="${contextPath}/registration">Not a member?</a></p>
+            </div>
         </div>
-
-    </form>
+</div>
+</form>
 
 </div>
 <!-- /container -->

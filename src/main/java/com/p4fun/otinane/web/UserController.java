@@ -16,9 +16,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class UserController {
+
     @Autowired
     private UserService userService;
 
@@ -49,7 +51,7 @@ public class UserController {
 
         securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 
-        return "redirect:/welcome";
+        return "redirect:/map";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -65,8 +67,17 @@ public class UserController {
 
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
     public String welcome(Model model) {
-        return "welcome";
+        return "map";
     }
+
+    @RequestMapping(value = {"/reset"}, method = RequestMethod.GET)
+    public String resetAccount(@RequestParam("username")String username){
+
+        userService.resetAccount(username);
+
+        return "login";
+    }
+
 
 
 

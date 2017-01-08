@@ -14,6 +14,24 @@ Changelog of Git Changelog.
     ## 110
             ### No issue
 
+            **CHANGELOG**
+
+
+            [6f00cc2117f7f0c](https://github.com/InvertedHellWorkshop/otinane/commit/6f00cc2117f7f0c) Immortuon *2017-01-08 12:03:56*
+
+
+    ## 112
+            ### No issue
+
+            **Minor fixes regarding duplicates of slf4j and bugs on versions plugin**
+
+
+            [f59b82a652e4f66](https://github.com/InvertedHellWorkshop/otinane/commit/f59b82a652e4f66) Immortuon *2017-01-07 17:08:10*
+
+
+    ## 110
+            ### No issue
+
             **Updated pom.xml to use newVersion property**
 
 
