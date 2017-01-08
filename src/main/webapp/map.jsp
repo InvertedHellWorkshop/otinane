@@ -41,6 +41,28 @@
     </div>
 
 </div>
+
+<div class="LogOut overlap">
+    <div id="reset">
+        <a type="button" onclick="ResetAcc()">Reset Account</a>
+    </div>
+</div>
+
+<script>
+    ResetAcc = function(){
+        var x = new XMLHttpRequest();
+        var reset = "${contextPath}/reset?username=${pageContext.request.userPrincipal.name}";
+        x.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                ChangeState();
+            }
+        };
+        x.open("GET", reset, true);
+        x.send();
+    }
+</script>
+
+
 <script language="javascript">
 
     function toggle() {
@@ -280,14 +302,14 @@
 
                 google.maps.event.addListener(marker, 'click', function() {
 
-                      if ((latx >= upperItemLat || latx <= bottomItemLat) && (lonx >= upperItemLng || lonx <= bottomItemLng)) {
-                    infowindow.setContent("You are not in range to see this riddle");
-                      } else {
-
-                    infowindow.setContent(answerHtml);
+                    if ((latx >= upperItemLat || latx <= bottomItemLat) && (lonx >= upperItemLng || lonx <= bottomItemLng)) {
+                        infowindow.setContent("You are not in range to see this riddle");
+                    } else {
+                        infowindow.setContent(answerHtml);
                      }
-                    //Ελέγχει την απαντηση απο τη "φόρμα" στη παραπάνω γραμμή <<infowindow.setContent(answerHtml)>>
 
+
+                    //Ελέγχει την απαντηση απο τη "φόρμα" στη παραπάνω γραμμή <<infowindow.setContent(answerHtml)>>
                     checkAnswer = function() {
                         //Παίρνει την απάντηση του χρήστη απο το input της "φόρμας"
                         var userAnswer = document.getElementById("userAnswer").value;
@@ -305,7 +327,7 @@
                             xmlhttp.setRequestHeader("Content-length", params.length);
                             xmlhttp.setRequestHeader("Connection", "close");
                             if (item.latitude==41.075322 && item.longitude==23.554138){
-                                document.getElementById("message").innerHTML = "<font color='#00ff7f'>You answer correct on all our riddles..this is the end of the Game.You can now log out</font>";
+                                document.getElementById("message").innerHTML = "<font color='#00ff7f'>You answer correct on all our riddles... This is the end of the Game.<br>You can reset your account and play again!</font>";
 
 
                             }else {

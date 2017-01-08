@@ -2,16 +2,7 @@
 
 Changelog of Git Changelog.
 
-    ## Unreleased
-            ### No issue
-
-            **CHANGELOG**
-
-
-            [6f00cc2117f7f0c](https://github.com/InvertedHellWorkshop/otinane/commit/6f00cc2117f7f0c) Immortuon *2017-01-08 12:03:56*
-
-
-    ## 112
+    ## 115
             ### No issue
 
             **Minor fixes regarding duplicates of slf4j and bugs on versions plugin**
@@ -456,6 +447,11 @@ Changelog of Git Changelog.
 
             [cf3ecff59d7eb38](https://github.com/InvertedHellWorkshop/otinane/commit/cf3ecff59d7eb38) Immortuon *2016-12-02 20:24:58*
 
+            **UserServiceImpl Test - Add User Success**
+
+
+            [3b79740a1808c6a](https://github.com/InvertedHellWorkshop/otinane/commit/3b79740a1808c6a) Hrystos *2016-11-20 10:59:45*
+
 
     ## 22
                 ### GitHub [#1](https://github.com/InvertedHellWorkshop/otinane/issues/1) Create Test InsertUserSuccess
@@ -501,15 +497,6 @@ Changelog of Git Changelog.
                 * Added UserTest class for testing User model
 
             [2d134beda3ec3e7](https://github.com/InvertedHellWorkshop/otinane/commit/2d134beda3ec3e7) Immortuon *2016-11-19 14:45:50*
-
-
-    ## refs/tags/RELEASE_8
-            ### No issue
-
-            **UserServiceImpl Test - Add User Success**
-
-
-            [3b79740a1808c6a](https://github.com/InvertedHellWorkshop/otinane/commit/3b79740a1808c6a) Hrystos *2016-11-20 10:59:45*
 
 
     ## 11
