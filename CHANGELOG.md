@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog.
 
+    ## Unreleased
+            ### No issue
+
+            **CHANGELOG**
+
+
+            [6f00cc2117f7f0c](https://github.com/InvertedHellWorkshop/otinane/commit/6f00cc2117f7f0c) Immortuon *2017-01-08 12:03:56*
+
+
     ## 112
             ### No issue
 
