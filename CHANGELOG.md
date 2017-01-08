@@ -2,7 +2,16 @@
 
 Changelog of Git Changelog.
 
-    ## Unreleased
+    ## 115
+            ### No issue
+
+            **Minor fixes regarding duplicates of slf4j and bugs on versions plugin**
+
+
+            [f59b82a652e4f66](https://github.com/InvertedHellWorkshop/otinane/commit/f59b82a652e4f66) Immortuon *2017-01-07 17:08:10*
+
+
+    ## 110
             ### No issue
 
             **Updated pom.xml to use newVersion property**
@@ -85,6 +94,10 @@ Changelog of Git Changelog.
 
             [025ec66db60189e](https://github.com/InvertedHellWorkshop/otinane/commit/025ec66db60189e) Immortuon *2017-01-05 19:07:36*
 
+
+    ## 85
+            ### No issue
+
             **Added Beta Testing feedback**
 
                 * Added JMeter and SOAPUI testing in pom.xml
@@ -97,10 +110,18 @@ Changelog of Git Changelog.
 
             [a00d1c25436d718](https://github.com/InvertedHellWorkshop/otinane/commit/a00d1c25436d718) Yannis Kiachidis *2016-12-21 18:08:40*
 
+
+    ## 83
+            ### No issue
+
             **Minor corrections that resolved an error**
 
 
             [37dfdcf2c3f5d7b](https://github.com/InvertedHellWorkshop/otinane/commit/37dfdcf2c3f5d7b) Immortuon *2016-12-19 17:42:59*
+
+
+    ## 82
+            ### No issue
 
             **Minor corrections that resolved an error**
 
@@ -119,6 +140,10 @@ Changelog of Git Changelog.
                 * Updated: Database Population
 
             [d02a990ff12c30f](https://github.com/InvertedHellWorkshop/otinane/commit/d02a990ff12c30f) iordmert *2016-12-18 16:14:37*
+
+
+    ## 81
+            ### No issue
 
             **Minor corrections that resolved an error**
 
@@ -422,6 +447,11 @@ Changelog of Git Changelog.
 
             [cf3ecff59d7eb38](https://github.com/InvertedHellWorkshop/otinane/commit/cf3ecff59d7eb38) Immortuon *2016-12-02 20:24:58*
 
+            **UserServiceImpl Test - Add User Success**
+
+
+            [3b79740a1808c6a](https://github.com/InvertedHellWorkshop/otinane/commit/3b79740a1808c6a) Hrystos *2016-11-20 10:59:45*
+
 
     ## 22
                 ### GitHub [#1](https://github.com/InvertedHellWorkshop/otinane/issues/1) Create Test InsertUserSuccess
@@ -467,15 +497,6 @@ Changelog of Git Changelog.
                 * Added UserTest class for testing User model
 
             [2d134beda3ec3e7](https://github.com/InvertedHellWorkshop/otinane/commit/2d134beda3ec3e7) Immortuon *2016-11-19 14:45:50*
-
-
-    ## refs/tags/RELEASE_8
-            ### No issue
-
-            **UserServiceImpl Test - Add User Success**
-
-
-            [3b79740a1808c6a](https://github.com/InvertedHellWorkshop/otinane/commit/3b79740a1808c6a) Hrystos *2016-11-20 10:59:45*
 
 
     ## 11

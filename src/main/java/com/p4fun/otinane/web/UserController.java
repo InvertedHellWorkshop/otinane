@@ -16,6 +16,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class UserController {
@@ -66,6 +67,15 @@ public class UserController {
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
     public String welcome(Model model) {
         return "map";
+    }
+
+
+    @RequestMapping(value = {"/reset"}, method = RequestMethod.GET)
+    public String resetAccount(@RequestParam("username")String username){
+
+        userService.resetAccount(username);
+
+        return "login";
     }
 
 
